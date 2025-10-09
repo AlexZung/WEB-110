@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- Alexander Zung 10/09/2025 -->
+
+<html lang="en">
+    <head>
+        <title>Hobbies</title>
+        <meta charset="utf-8" />
+
+        <style>
+            /* Reset the browser defaults for the whole page */
+            * {
+                box-sizing: border-box;
+            }
+
+            /* Element styles */
+            h2 {
+                padding-left: 10px;
+                color: slategrey;
+                font-size: 2em;
+                font-style: italic;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            /* Create two equal columns that floats next to each other */
+            section {
+                float: left;
+                width: 50%;
+                padding: 10px;
+            }
+
+            /* Clear floats after the columns */
+            main:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            /* Image styles */
+            img {
+                height: 70%;
+                max-width: 80%;
+                opacity: 0.7;
+            }
+
+            img:hover {
+                border: 1px solid #ddc10f;
+                opacity: 1;
+                transform: scale(1.1); /* 120% zoom */
+                transition: transform 0.3s ease-in-out;
+            }
+
+            /* Footer the structures the bottom bar */
+            footer {
+                text-align: center;
+                font-style: italic;
+                background-color: #cde5f6;
+                font-size: 80%;
+                border: 2px, dashed, royalblue
+
+            }
+
+            /* Class styles */
+            .heading {
+                color: yellow;
+                text-align: center;
+                background-color: royalblue;
+                /*border: 10px, solid, royalblue;*/
+                padding: 2%;
+            }
+
+            .desc {
+                text-align: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color:darkred;
+                border: 1px;
+            }
+
+
+            /* Wrapper that structures the whole page */
+            .wrapper {
+                width: 90%;
+                margin: auto;
+                background-color: #cde5f6;
+                box-shadow: 3px 5px #1b1b2b;
+                border: 2px solid slategray;
+                border-radius: 15px;
+            }
+
+            /*Link styles*/
+            nav {
+                border: 2px solid slategrey;
+                background-color: #ececd8;
+                font-weight: bold;
+                text-align: center;
+                font-size: 120%;
+            }
+
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 10px;
+                font-size: 1.2em;
+            }
+
+            nav li {
+                display: inline;
+                padding: 10px;
+            }
+
+            nav a {
+                text-decoration: none;
+            }
+
+            nav a:link {
+                color: #0194b5;
+            }
+
+            nav a:visited {
+                color: #2d0540;
+            }
+
+            nav a:hover {
+                color: #c6d02f;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1 class="heading">Things I like</h1>
+            </header>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Video Games</a></li>|
+                    <li><a href="japanese.html">Learning Japanese</a></li>
+
+                </ul>
+            </nav>
+
+            <main>
+                <h2>Two Things I like to do</h2>
+
+                <section>
+                    <img src="video-games.jpg" alt="Playing a video game.">
+                    <p class="desc">Video games are an exciting and fun hobby full of exploration, challenges, and drama. There are many kinds of genres, like platformers, RPGs and visual novels, and I enjoy a wide variety of them for different reasons.</p>
+                </section>
+
+                <section>
+                    <img src="learning-japanese.jpg" alt="Reading a book on the Hiragana writing system.">
+                    <p class="desc">Learning Japanese is an endlessly fufilling experience. It is a very wonderful language. It can be very challenging to consume Japanese media when you can barely understand it, but the feeling of understanding more and more is very rewarding.</p>
+                </section>
+            </main>
+
+            <footer>
+                <h5>Copyright &copy; 2025 Alexander Zung</h5>
+            </footer>
+        </div>
+    </body>
+</html>
