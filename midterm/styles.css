@@ -1,0 +1,124 @@
+/*
+    Alexander Zung
+    10/16/2025
+    WEB-110 HTML & CSS
+*/
+
+/* Liquid Layout */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin-left: auto; 
+    margin-right: auto;
+
+    padding: 2%;
+    font-size: 16px; /* Base font size set to 16px, which equals 1rem*/
+
+    /* full page background */
+    background-image: url(bg-sakura-temple.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+    max-width: 90%; /*responsive width*/
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(237, 231, 172, 0.9);
+}
+
+header {
+    font-size: 3rem;
+    color: rgb(250, 54, 54); /*white;/*rgb(63, 186, 63);*/
+    /*background-color: white;*/
+    padding: 0.5rem;
+}
+
+footer {
+    max-width: 20%;
+    margin: 2rem auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: rgba(237, 231, 172, 0.9);
+}
+
+/* Nav Stuff */
+nav {
+    margin-left: auto;
+    margin-right: auto;
+    max-width:100%;
+    
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 2rem;
+    background-color: rgb(250, 54, 54);
+    background-image: linear-gradient(0deg, rgb(250, 54, 54), pink);
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+nav li {
+    padding: 2rem;
+}
+nav a { /*A Very Hungry Feline Acrobat (a visited hover focus active)*/
+    padding: 2rem;
+    margin: 0;
+    background-color: rgb(249, 141, 215);
+    background-image: linear-gradient(0deg, rgb(249, 141, 215), white);
+    
+    /*color: #ffffff;*/
+    color: black; /*rgb(250, 54, 54);*/
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: #0600bd;
+}
+
+nav a:hover {
+    color: rgb(250, 54, 54);
+    background-color: #0066ff;
+    background-image: linear-gradient(0deg, #0066ff, white);
+    text-decoration: underline;
+}
+
+nav a:active {
+    background-color: #56e2ef;
+    background-image: linear-gradient(0deg, #56e2ef, white);
+}
+
+/* Misc. Element styling */
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+section li {
+    font-size: 1.25rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    border: .3rem solid #000;
+    display: block;
+    opacity: 100%
+}
